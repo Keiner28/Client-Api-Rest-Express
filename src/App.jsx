@@ -8,6 +8,7 @@ const App = () => {
   const loadMovies = useStore(state => state.loadMovies)
 
   useEffect(() => {
+    document.title = 'Movie App'
     loadMovies()
   }, [loadMovies])
 
